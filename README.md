@@ -26,16 +26,16 @@ You'll also need an OpenWeatherMap API key (sign up at openweathermap.org/api).
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/Vittal17/weather-app.git
-   cd weather-app
+   `git clone https://github.com/Vittal17/weather-app.git`
+   `cd weather-app`
 
 3. Install the required packages:
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 5. Set up your OpenWeatherMap API key (see "Usage" for secure setup).
 
 6. Run the app:
-   python app.py
+   `python app.py`
 
 8. Open your browser and go to `http://localhost:5000`.
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { margin-bottom: 20px; }
+        input[type="text"] { padding: 5px; }
+        button { padding: 5px 10px; }
+        .error { color: red; }
+        .weather { font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Weather Lookup</h1>
+    <form action="/" method="GET">
+        <input type="text" name="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    {% if weather_data %}
+        <div class="weather">
+            <p>The temperature in {{ weather_data.city }} is {{ weather_data.temperature }}°C</p>
+        </div>
+    {% endif %}
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
